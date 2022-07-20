@@ -216,7 +216,7 @@ mp_obj_t MP_WEAK rtc_get_time_source_time(void) {
 //|     """Return the current time in seconds since since Jan 1, 1970.
 //|
 //|     :return: the current time
-//|     :rtype: int"""
+//|     :rtype: float"""
 //|     ...
 //|
 STATIC mp_obj_t time_time(void) {
