@@ -224,7 +224,7 @@ STATIC mp_obj_t time_time(void) {
     struct_time_to_tm(rtc_get_time_source_time(), &tm);
     mp_uint_t secs = timeutils_seconds_since_epoch(tm.tm_year, tm.tm_mon, tm.tm_mday,
         tm.tm_hour, tm.tm_min, tm.tm_sec);
-    mp_float_t secs_f = (mp_float_t)secs
+    mp_float_t secs_f = (mp_float_t)secs;
     return mp_obj_new_float(secs_f);
 }
 MP_DEFINE_CONST_FUN_OBJ_0(time_time_obj, time_time);
